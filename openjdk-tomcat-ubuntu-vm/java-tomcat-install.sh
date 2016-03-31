@@ -19,9 +19,9 @@ export PATH=$PATH:$JAVA_HOME/bin
 sudo chmod a+x $JAVA_HOME/bin/java
 
 cd ../tomcat
-if [ "$2" == "tomcat7" ]; then
+if [ $2 -eq "tomcat7" ] then
        tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-7.latest.zip"
-elif [ "$2" == "tomcat6" ]; then
+elif [ $2 -eq "tomcat6" ] then
        tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-6.latest.zip"
 else 
        tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-8.latest.zip"
