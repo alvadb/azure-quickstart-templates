@@ -22,7 +22,7 @@ if [ $2 == "tomcat7" ]; then
 elif [ $2 == "tomcat6" ]; then
        tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-6.latest.zip"
 else 
-       tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-8.latest.zip"
+       tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-7.latest.zip"
 fi
       
 sudo curl -o ./latest.zip $tomcatZipLoc
