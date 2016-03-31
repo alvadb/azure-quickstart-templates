@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt-get -y update
 sudo apt-get install unzip
 sudo apt-get -y update --fix-missing
