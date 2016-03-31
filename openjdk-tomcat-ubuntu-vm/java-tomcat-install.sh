@@ -17,11 +17,11 @@ export PATH=$PATH:$JAVA_HOME/bin
 sudo chmod a+x $JAVA_HOME/bin/java
 
 cd ../tomcat
-if [ $2 = tomcat7 ]; then
+if [ $2 == "tomcat7" ]; then
        tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-7.latest.zip"
-elif [ $2 = tomcat6 ]; then
+elif [ $2 == "tomcat6" ]; then
        tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-6.latest.zip"
-else 
+else x1
        tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-8.latest.zip"
 fi
       
@@ -44,7 +44,6 @@ echo 'export JAVA_HOME=/usr/lib/jvm/zulu1.8.0_latest-x86lx64' | sudo tee --appen
 
 sudo touch /etc/init.d/tomcat
 sudo echo '# Tomcat auto-start' | sudo tee --append /etc/init.d/tomcat
-sudo echo $tomcatZipLoc | sudo tee --append /etc/init.d/tomcat
 sudo echo '#' | sudo tee --append /etc/init.d/tomcat
 sudo echo '# description: Auto-starts tomcat' | sudo tee --append /etc/init.d/tomcat
 sudo echo '# processname: tomcat' | sudo tee --append /etc/init.d/tomcat
