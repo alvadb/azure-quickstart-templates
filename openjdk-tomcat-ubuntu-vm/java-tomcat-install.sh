@@ -44,7 +44,7 @@ echo 'export JAVA_HOME=/usr/lib/jvm/zulu1.8.0_latest-x86lx64' | sudo tee --appen
 
 sudo touch /etc/init.d/tomcat
 sudo echo '# Tomcat auto-start' | sudo tee --append /etc/init.d/tomcat
-sudo echo $2 | sudo tee --append /etc/init.d/tomcat
+sudo echo $tomcatZipLoc | sudo tee --append /etc/init.d/tomcat
 sudo echo '#' | sudo tee --append /etc/init.d/tomcat
 sudo echo '# description: Auto-starts tomcat' | sudo tee --append /etc/init.d/tomcat
 sudo echo '# processname: tomcat' | sudo tee --append /etc/init.d/tomcat
