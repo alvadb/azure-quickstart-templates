@@ -20,13 +20,10 @@ sudo chmod a+x $JAVA_HOME/bin/java
 
 cd ../tomcat
 if [ "$2" = "tomcat7" ]; then
-	echo "tomcat7"
        tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-7.latest.zip"
 elif [ "$2" = "tomcat6" ]; then
-	echo "tomcat6"
        tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-6.latest.zip"
 else 
-	echo "tomcat8"
        tomcatZipLoc="https://azuredownloads.blob.core.windows.net/tomcat/apache-tomcat-8.latest.zip"
 fi
       
