@@ -213,7 +213,7 @@
         "typeHandlerVersion": "1.2",
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/alvadb/azure-quickstart-templates/master/docker-simple-on-ubuntu/post-install.json"
+            "https://raw.githubusercontent.com/alvadb/azure-quickstart-templates/master/docker-simple-on-ubuntu/post-install.sh"
           ],
           "commandToExecute": "[concat('sh post-install.sh',' ',parameters('adminUsername'))]"
         }
