@@ -1,3 +1,5 @@
+cd /home/$1
+
 touch buildDockerWAR.sh
 
 #!/bin/bash
